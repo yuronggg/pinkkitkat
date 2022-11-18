@@ -22,11 +22,11 @@
     <!-- this is a comment: the alert below produces a pop up box when loaded to give information to users, 
      you can edit the message in between the inverted commas or remove it entirely
     -->
-    <script>
+    <!-- <script>
       window.onload = function () {
         alert("Android users experiencing extreme camera zoom should go to browser setting, accessibility/webpage view, turn off force enable zoom/pinch to zoom in/out of webpages\n\nClick on X on the top right hand to partially hide background");
       };
-    </script>
+    </script> -->
   </head>
 
   <body> 
@@ -53,8 +53,8 @@
           make sure that the model file is placed in the same repository where this index.html file is located
         -->
         <a-asset-item
-          id="template"
-          src="template.gltf"
+          id="among_us"
+          src="among_us.gltf"
         >
         </a-asset-item>
       </a-assets>
@@ -85,10 +85,10 @@
         you can leave scale unchanged, but you can modify the x y z scale to adjust the size of your model when it first loads, if necessary,
         if your model is animated, type "animation-mixer" without the inverted commas in another line below gesture-handler with the same alignment
       -->
-        <a-entity
-          id="template-model"
-          gltf-model="#template"
-          position="0 0 0"
+        <a-entity   
+          id="among_us-model" 
+          gltf-model="#among_us"
+          position="3 2 1" 
           rotation="0 0 0"
           scale="1 1 1"
           class="clickable"
